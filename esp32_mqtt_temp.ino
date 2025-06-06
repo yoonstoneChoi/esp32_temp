@@ -40,7 +40,6 @@ int value = 0;
 void setup_wifi() {
 
   delay(10);
-  // We start by connecting to a WiFi network
   Serial.println();
   Serial.print("Connecting to ");
   Serial.println(ssid);
@@ -91,7 +90,7 @@ void reconnect() {
   
       client.publish("outTopic", "hello world");
     
-      client.subscribe("/ESP32/LAAS/INTOPIC/YSH");
+      client.subscribe("/ESP32/LAAS/INTOPIC/YOUR_ROOM");
     } else {
       Serial.print("failed, rc=");
       Serial.print(client.state());
@@ -161,6 +160,6 @@ void loop() {
     snprintf (msg, MSG_BUFFER_SIZE, "%.2f", temp);
     Serial.print("Publish message: ");
     Serial.println(msg);
-    client.publish("ESP32/LAAS/TEMP/YSH", msg);
+    client.publish("ESP32/LAAS/TEMP/YOUR_ROOM", msg);
   }
 }
