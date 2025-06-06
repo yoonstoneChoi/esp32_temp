@@ -1,6 +1,6 @@
 # ESP32 Temperature Monitor with MQTT and TM1638 Display
 
-이 프로젝트는 ESP32 보드를 사용해 DHT11 센서로 온도를 측정하고, 그 값을 MQTT 브로커로 전송하며, TM1638 LED 모듈을 통해 실시간으로 온도를 표시하는 간단한 IoT 시스템입니다.
+ESP32 보드를 사용해 DHT11 센서로 온도를 측정하고, 그 값을 MQTT 브로커로 전송하며, TM1638 LED 모듈을 통해 실시간으로 온도를 표시하는 간단한 IoT 시스템입니다.
 
 ## 주요 기능
 
